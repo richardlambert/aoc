@@ -7,7 +7,7 @@ const roundDelim = '\n';
 const statsDelim = ' ';
 
 describe('scoreFromStrategy()', () => {
-  it("return a scrore of 15 given an input of 'A Y\\nB X\\nC Z'", async () => {
+  it("return a scrore of 12 given an input of 'A Y\\nB X\\nC Z'", async () => {
     const score = await scoreFromStrategy(strategy, roundDelim, statsDelim, scoreMap);
     assert.equal(score, 12);
   });
